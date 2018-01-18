@@ -1,6 +1,9 @@
+.header {
+	background-color: #d29691;
+	padding: 5%;
+}
+
 .container {
 	font-family: "PT Sans", sans-serif;
 	padding: 5% 5%;
 }
-
-
