@@ -1,3 +1,5 @@
 $(document).ready(function() {
-	$(".newmeme").click();
+	$(".btn").click(function() {
+		$(".header").css("background-color", "blue");
+	});
 });
