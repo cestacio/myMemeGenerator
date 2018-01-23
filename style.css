@@ -1,5 +1,4 @@
 .header {
-	/*background: #d29691;*/
 	padding: 5%;
 	margin: 0 auto;
 	width: 100%;
@@ -32,6 +31,7 @@ ul li {
 }
 
 li.meme {
+	position: relative;
 	margin: 25px;
 	width: 500px;
 	height: 500px;
@@ -43,27 +43,26 @@ li.meme {
 	text-transform: uppercase;
 	text-shadow: 0 0 10px black;
 	color: white;
-	position: relative;
 }
 
 li:hover {
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 #meme-text-top {
+	position: absolute;
 	margin-top: 0;
 	top: 0;
-	right: 0;
 	left: 0;
+	right: 0;
 	overflow: hidden;
-	position: absolute;
 }
 
 #meme-text-bottom {
+	position: absolute;
 	margin-bottom: 0;
 	bottom: 0;
-	right: 0;
 	left: 0;
+	right: 0;
 	overflow: hidden;
-	position: absolute;
 }
