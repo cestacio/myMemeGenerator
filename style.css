@@ -1,8 +1,69 @@
 .header {
-	background-color: #d29691;
+	/*background: #d29691;*/
 	padding: 5%;
+	margin: 0 auto;
+	width: 100%;
 }
 
-.container {
+/* background from ui gradients*/
+body {
 	font-family: "PT Sans", sans-serif;
+	background: #74ebd5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#acb6e5,
+		#74ebd5
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#acb6e5,
+		#74ebd5
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+	list-style: none;
+	display: inline;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+}
+
+li.meme {
+	margin: 25px;
+	width: 500px;
+	height: 500px;
+	text-align: center;
+	padding: 10%;
+	font-size: 50px;
+	font-family: "Impact";
+	font-weight: normal;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px black;
+	color: white;
+	position: relative;
+}
+
+li:hover {
+	opacity: 0.5;
+}
+
+#meme-text-top {
+	margin-top: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+#meme-text-bottom {
+	margin-bottom: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
 }
