@@ -10,10 +10,10 @@ $(function() {
 		// set image properties to image url
 		var imageProperties = {
 			class: "meme",
-			style: `background: url(${imageUrl}); background-size: cover; background-repeat: no-repeat; background-position: center center;`
+			style: `background: url(${imageUrl}); background-size: cover; background-repeat: no-repeat; background-position: center;`
 		};
 
-		// set the text to the images
+		// set attributes to image and text
 		var $newMeme = $("<li>");
 		$newMeme.attr(imageProperties);
 		var top = $("<p>");
@@ -26,7 +26,7 @@ $(function() {
 		$("#meme-text-top").text(topText);
 		$("#meme-text-bottom").text(bottomText);*/
 
-		// add text to photo
+		// add new meme to list
 		$newMeme.append(top).append(bottom);
 		$("ul").prepend($newMeme);
 
