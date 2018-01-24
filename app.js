@@ -21,7 +21,7 @@ $(function() {
 			.text(topText);
 		var bottom = $("<p>")
 			.attr("id", "meme-text-bottom")
-			.text(bottom);
+			.text(bottomText);
 
 		/*
         // set text to id's
