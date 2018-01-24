@@ -13,18 +13,20 @@ $(function() {
 			style: `background: url(${imageUrl}); background-size: cover; background-repeat: no-repeat; background-position: center;`
 		};
 
-		// set attributes to image and text
+		// set attributes to image(li) and text(p)
 		var $newMeme = $("<li>");
 		$newMeme.attr(imageProperties);
-		var top = $("<p>");
-		var bottom = $("<p>");
-		top.attr("id", "meme-text-top").text(topText);
-		bottom.attr("id", "meme-text-bottom").text(bottomText);
+		var top = $("<p>")
+			.attr("id", "meme-text-top")
+			.text(topText);
+		var bottom = $("<p>")
+			.attr("id", "meme-text-bottom")
+			.text(bottom);
 
 		/*
-		// set text to id's
-		$("#meme-text-top").text(topText);
-		$("#meme-text-bottom").text(bottomText);*/
+        // set text to id's
+        $("#meme-text-top").text(topText);
+        $("#meme-text-bottom").text(bottomText);*/
 
 		// add new meme to list
 		$newMeme.append(top).append(bottom);
